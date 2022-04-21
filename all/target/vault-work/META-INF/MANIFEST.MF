@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: Database Connector - All
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.adobe.learning:dbconnector.all:1.0.0-SNAPSHOT
+Content-Package-Description: All content package for Database Connector
+Content-Package-Roots: /apps/dbconnector-packages,/apps/dbconnector-vend
+ or-packages
+

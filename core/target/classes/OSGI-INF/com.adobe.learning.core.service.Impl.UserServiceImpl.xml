@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.adobe.learning.core.service.Impl.UserServiceImpl" immediate="true">
+  <service>
+    <provide interface="com.adobe.learning.core.service.UserService"/>
+  </service>
+  <reference name="databaseService" interface="com.adobe.learning.core.service.DatabaseService" field="databaseService"/>
+  <reference name="userDao" interface="com.adobe.learning.core.dao.UserDao" field="userDao"/>
+  <implementation class="com.adobe.learning.core.service.Impl.UserServiceImpl"/>
+</scr:component>

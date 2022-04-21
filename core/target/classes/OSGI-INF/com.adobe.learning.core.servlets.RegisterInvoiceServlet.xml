@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.adobe.learning.core.servlets.RegisterInvoiceServlet">
+  <property name="sling.servlet.paths" type="String" value="/bin/app/registerinvoice"/>
+  <property name="sling.servlet.methods" type="String">GET
+POST</property>
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="invoiceService" interface="com.adobe.learning.core.service.InvoiceService" field="invoiceService"/>
+  <implementation class="com.adobe.learning.core.servlets.RegisterInvoiceServlet"/>
+</scr:component>

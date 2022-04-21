@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Database Connector - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2022-04-21T00:00:22.080Z</entry>
+<entry key="groupId">com.adobe.learning</entry>
+<entry key="name">dbconnector.all</entry>
+<entry key="description">All content package for Database Connector</entry>
+<entry key="artifactId">dbconnector.all</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.adobe.learning</entry>
+</properties>

@@ -1,0 +1,5 @@
+#File edited by the Apache Sling Content Package to Sling Feature converter
+#Wed Apr 20 21:00:23 BRT 2022
+author=dbconnector.all-author.json
+publish=dbconnector.all-publish.json
+(default)=dbconnector.all.json

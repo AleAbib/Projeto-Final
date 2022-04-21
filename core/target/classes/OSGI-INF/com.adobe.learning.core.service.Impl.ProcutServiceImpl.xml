@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.adobe.learning.core.service.Impl.ProcutServiceImpl" immediate="true">
+  <service>
+    <provide interface="com.adobe.learning.core.service.ProductService"/>
+  </service>
+  <reference name="databaseService" interface="com.adobe.learning.core.service.DatabaseService" field="databaseService"/>
+  <reference name="productDao" interface="com.adobe.learning.core.dao.ProductDao" field="productDao"/>
+  <implementation class="com.adobe.learning.core.service.Impl.ProcutServiceImpl"/>
+</scr:component>

@@ -1,0 +1,36 @@
+{
+  "id":"com.adobe.learning:dbconnector.all:slingosgifeature:author:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "com.adobe.granite.cors.impl.CORSPolicyImpl~dbconnector":    {
+      "alloworigin":[
+        "http://localhost:3000"
+      ],
+      "allowedpaths":[
+        "/(content|conf)/dbconnector.*"
+      ],
+      "supportedheaders":[
+        "Authorization",
+        "Origin",
+        "Accept",
+        "X-Requested-With",
+        "Content-Type",
+        "Access-Control-Request-Method",
+        "Access-Control-Request-Headers"
+      ],
+      "supportedmethods":[
+        "GET",
+        "HEAD"
+      ],
+      "alloworiginregexp":[
+      ],
+      ":configurator:content-package-origins":"com.adobe.learning:dbconnector.all:1.0.0-SNAPSHOT|com.adobe.learning:dbconnector.ui.config:1.0.0-SNAPSHOT"
+    },
+    "com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider~dbconnector":    {
+      "mobile.resourceTypes":[
+        "dbconnector/components/page"
+      ],
+      "README":"Indicate which page resource types should display the mobile emulators.",
+      ":configurator:content-package-origins":"com.adobe.learning:dbconnector.all:1.0.0-SNAPSHOT|com.adobe.learning:dbconnector.ui.config:1.0.0-SNAPSHOT"
+    }
+  }
+}

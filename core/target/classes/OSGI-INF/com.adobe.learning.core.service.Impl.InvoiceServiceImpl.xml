@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.adobe.learning.core.service.Impl.InvoiceServiceImpl" immediate="true">
+  <service>
+    <provide interface="com.adobe.learning.core.service.InvoiceService"/>
+  </service>
+  <reference name="databaseService" interface="com.adobe.learning.core.service.DatabaseService" field="databaseService"/>
+  <reference name="invoiceDao" interface="com.adobe.learning.core.dao.InvoiceDao" field="invoiceDao"/>
+  <reference name="productService" interface="com.adobe.learning.core.service.ProductService" field="productService"/>
+  <reference name="requestService" interface="com.adobe.learning.core.service.RequestService" field="requestService"/>
+  <implementation class="com.adobe.learning.core.service.Impl.InvoiceServiceImpl"/>
+</scr:component>

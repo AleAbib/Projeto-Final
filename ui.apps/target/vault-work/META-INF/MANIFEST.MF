@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: Database Connector - UI apps
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: application
+Content-Package-Id: com.adobe.learning:dbconnector.ui.apps:1.0.0-SNAPSHO
+ T
+Content-Package-Description: UI apps package for Database Connector
+Content-Package-Roots: /apps/dbconnector/clientlibs,/apps/dbconnector/co
+ mponents,/apps/dbconnector/i18n
+Import-Package: com.adobe.learning.core.models;version="[1.0.0,2.0.0)",o
+ rg.apache.sling.scripting.sightly;version="[2.0.0,3.0.0)"
+

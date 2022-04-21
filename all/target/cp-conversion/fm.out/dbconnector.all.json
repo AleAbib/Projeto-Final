@@ -1,0 +1,50 @@
+{
+  "id":"com.adobe.learning:dbconnector.all:slingosgifeature:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"com.adobe.learning:dbconnector.core:1.0.0-SNAPSHOT",
+      "Bundle-SymbolicName":"dbconnector.core",
+      "Bundle-Version":"1.0.0.SNAPSHOT",
+      "start-order":"20",
+      "content-package-origins":"com.adobe.learning:dbconnector.all:1.0.0-SNAPSHOT"
+    }
+  ],
+  "configurations":  {
+    "org.apache.sling.commons.log.LogManager.factory.config~dbconnector":    {
+      "org.apache.sling.commons.log.names":[
+        "com.adobe.learning"
+      ],
+      "org.apache.sling.commons.log.level":"INFO",
+      "org.apache.sling.commons.log.file":"logs/error.log",
+      "org.apache.sling.commons.log.additiv":"false",
+      ":configurator:content-package-origins":"com.adobe.learning:dbconnector.all:1.0.0-SNAPSHOT|com.adobe.learning:dbconnector.ui.config:1.0.0-SNAPSHOT"
+    }
+  },
+  "content-packages:ARTIFACTS|true":[
+    "com.adobe.learning:dbconnector.ui.apps:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+    "com.adobe.learning:dbconnector.ui.config:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+    "com.adobe.learning:dbconnector.ui.content:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+    "com.adobe.learning:dbconnector.all:zip:cp2fm-converted:1.0.0-SNAPSHOT"
+  ],
+  "repoinit:TEXT|true":[
+    "# origin=com.adobe.learning:dbconnector.all:1.0.0-SNAPSHOT|com.adobe.learning:dbconnector.ui.config:1.0.0-SNAPSHOT source=org.apache.sling.jcr.repoinit.RepositoryInitializer~dbconnector\r",
+    "create path (sling:OrderedFolder) /content/dam/dbconnector\r",
+    "create path (nt:unstructured) /content/dam/dbconnector/jcr:content\r",
+    "set properties on /content/dam/dbconnector/jcr:content",
+    "  set cq:conf{String} to /conf/dbconnector",
+    "  set jcr:title{String} to \"Database Connector\"",
+    "end"
+  ],
+  "api-regions:JSON|false":[
+    {
+      "name":"global",
+      "exports":[
+        "com.adobe.learning.core.filters",
+        "com.adobe.learning.core.listeners",
+        "com.adobe.learning.core.models",
+        "com.adobe.learning.core.schedulers",
+        "com.adobe.learning.core.servlets"
+      ]
+    }
+  ]
+}

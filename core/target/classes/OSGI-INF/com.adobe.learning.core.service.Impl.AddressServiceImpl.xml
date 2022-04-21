@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.adobe.learning.core.service.Impl.AddressServiceImpl" immediate="true">
+  <service>
+    <provide interface="com.adobe.learning.core.service.AddressService"/>
+  </service>
+  <reference name="addressDao" interface="com.adobe.learning.core.dao.AddressDao" field="addressDao"/>
+  <reference name="databaseService" interface="com.adobe.learning.core.service.DatabaseService" field="databaseService"/>
+  <reference name="userService" interface="com.adobe.learning.core.service.UserService" field="userService"/>
+  <implementation class="com.adobe.learning.core.service.Impl.AddressServiceImpl"/>
+</scr:component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dbconnector.it.tests" />
+        <module name="dbconnector.all" />
+        <module name="dbconnector.ui.tests" />
+        <module name="dbconnector.ui.config" />
+        <module name="dbconnector.ui.content" />
+        <module name="dbconnector.ui.apps" />
+        <module name="dbconnector.ui.apps.structure" />
+        <module name="dbconnector.core" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+{
+  "id":"com.adobe.learning:dbconnector.all:slingosgifeature:publish:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      "resource.resolver.mapping":[
+        "/content/dbconnector/</",
+        "/:/"
+      ],
+      ":configurator:content-package-origins":"com.adobe.learning:dbconnector.all:1.0.0-SNAPSHOT|com.adobe.learning:dbconnector.ui.config:1.0.0-SNAPSHOT"
+    }
+  }
+}
